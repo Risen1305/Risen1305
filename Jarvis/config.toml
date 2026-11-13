@@ -1,0 +1,45 @@
+# Jarvis settings. Edit, save, and restart Jarvis.
+
+[user]
+# How Jarvis addresses you, e.g. "sir", "ma'am", or your name.
+title = "sir"
+
+[location]
+# Leave city blank to work out your location from your internet connection.
+# Or set a city ("London"), or exact coordinates (uncomment the two lines below).
+city = ""
+# latitude = 51.5072
+# longitude = -0.1276
+
+[weather]
+units = "celsius"          # "celsius" or "fahrenheit"
+
+[voice]
+# "edge"   = natural Microsoft neural voice (needs internet, sounds best)
+# "system" = the voices built into Windows (works offline)
+engine = "edge"
+edge_voice = "en-GB-RyanNeural"   # calm British male. Try "en-GB-ThomasNeural" or "en-GB-SoniaNeural".
+rate = "-8%"                      # slower = calmer
+pitch = "-2Hz"
+
+[ears]
+whisper_model = "base.en"   # "tiny.en" is faster, "small.en" is more accurate
+silence_seconds = 1.2       # pause length that means you've finished speaking
+max_listen_seconds = 15
+follow_up_seconds = 7       # how long Jarvis waits for another request before sleeping again
+
+[clap]
+sensitivity = 1.0   # raise (e.g. 1.5) if claps are missed, lower (e.g. 0.7) if it wakes on noise
+min_gap = 0.15      # shortest time between the two claps, in seconds
+max_gap = 0.9       # longest time between the two claps, in seconds
+
+[brain]
+model = ""          # blank = your Claude Code default model
+effort = "low"      # "low" answers fastest; "medium" or "high" thinks harder
+
+[apps]
+# Extra names Jarvis can open: spoken name = program, file, folder or web address.
+# Installed Start-menu apps are found automatically, so you only need these for extras.
+"youtube" = "https://www.youtube.com"
+"gmail" = "https://mail.google.com"
+"downloads" = "~/Downloads"
