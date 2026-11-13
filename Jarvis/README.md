@@ -12,7 +12,7 @@ Claude is its brain, through your own **Claude Code login**. You don't need an A
    claude        # log in once, then type /exit
    ```
 2. Download this `Jarvis` folder.
-3. Double-click **`jarvis.bat`**. The first run installs everything it needs (Python packages and a ~150 MB speech-recognition model).
+3. Double-click **`jarvis.bat`**, or run `python Jarvis.py` in that folder. The first run installs everything it needs (Python packages and a ~150 MB speech-recognition model).
 
 ## Using it
 
